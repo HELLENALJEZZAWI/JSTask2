@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        /* Add your CSS styling here */
+        /* For simplicity, I'll keep it minimal */
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Login Form</h1>
+    <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <br>
+        <button type="button" onclick="checkLogin()">Login</button>
+    </form>
+
+    <script>
+        
+        function checkLogin() {
+            const predefinedUsername = "myuser";
+            const predefinedPassword = "mypassword";
+
+            const inputUsername = document.getElementById("username").value;
+            const inputPassword = document.getElementById("password").value;
+
+            if (inputUsername === predefinedUsername && inputPassword === predefinedPassword) {
+                alert("Login successful");
+            } else {
+                alert("Incorrect username or password");
+            }
+        }
+    </script>
+</body>
+</html>

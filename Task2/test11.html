@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Grade Calculator</title>
+</head>
+<body>
+    <script>
+        const inputGrade = parseFloat(prompt("Enter your exam grade:"));
+
+        let grade;
+        if (inputGrade >= 90 && inputGrade <= 100) {
+            grade = "A";
+        } else if (inputGrade >= 80 && inputGrade < 90) {
+            grade = "B";
+        } else if (inputGrade >= 70 && inputGrade < 80) {
+            grade = "C";
+        } else if (inputGrade >= 60 && inputGrade < 70) {
+            grade = "D";
+        } else {
+            grade = "F";
+        }
+
+        alert(`Your academic grade is: ${grade}`);
+    </script>
+</body>
+</html>

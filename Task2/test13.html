@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Benefits</title>
+</head>
+<body>
+    <script>
+        const inputMembership = prompt("Enter your membership type (Basic, Silver, or Gold):");
+
+        let benefits;
+        switch (inputMembership.toLowerCase()) {
+            case "basic":
+                benefits = "Access to basic content";
+                break;
+            case "silver":
+                benefits = "Access to silver content";
+                break;
+            case "gold":
+                benefits = "Access to all content";
+                break;
+            default:
+                benefits = "Invalid membership type";
+        }
+
+        alert(benefits);
+    </script>
+</body>
+</html>

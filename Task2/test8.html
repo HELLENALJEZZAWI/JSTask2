@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exam Result</title>
+</head>
+<body>
+    <h3>chec7k if you get pass in exam dear :</h3>
+    <script>
+        function checkExamScore() {
+            const userInput = parseFloat(prompt("Enter your exam score:"));
+
+            if (!isNaN(userInput)) {
+                if (userInput >= 50) {
+                    alert("Congratulations! You passed the exam :)");
+                } else {
+                    alert("Sorry, you failed the exam :(");
+                }
+            } else {
+                alert("Invalid input. Please enter a valid score.");
+            }
+        }
+    </script>
+
+    <button onclick="checkExamScore()">Check Exam Score</button>
+</body>
+</html>

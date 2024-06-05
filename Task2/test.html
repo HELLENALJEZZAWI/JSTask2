@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Larger Number Checker</title>
+</head>
+<body>
+    <h3>find the larger number </h3>
+    <script>
+        function checkLargerNumber() {
+            const num1 = parseFloat(prompt("Enter the first number:"));
+            const num2 = parseFloat(prompt("Enter the second number:"));
+
+            if (!isNaN(num1) && !isNaN(num2)) {
+                if (num1 > num2) {
+                    alert("The larger number is " + num1 + ".");
+                } else if (num2 > num1) {
+                    alert("The larger number is " + num2 + ".");
+                } else {
+                    alert("The numbers are equal.");
+                }
+            } else {
+                alert("Invalid input. Please enter valid numbers.");
+            }
+        }
+    </script>
+
+    <button onclick="checkLargerNumber()">Check Larger Number</button>
+</body>
+</html>

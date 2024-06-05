@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+</head>
+<body>
+   
+    <script>
+         //note to coach I'M not sure the answer is correct :)
+         
+        function checkPassword() {
+            const predefinedPassword = "12345"; 
+            const userInput = prompt("Enter your password:");
+
+            if (userInput === predefinedPassword) {
+                alert("Login successful!");
+            } else {
+                alert("Incorrect password. Please try again.");
+            }
+        }
+    </script>
+
+    <button onclick="checkPassword()">Login</button>
+</body>
+</html>

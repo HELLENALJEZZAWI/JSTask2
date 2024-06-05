@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Temperature Checker</title>
+</head>
+<body>
+    <h3>Let's check temperature out side here ;)</h3>
+    <script>
+        function checkTemperature() {
+            const userInput = parseFloat(prompt("Enter the current temperature (in Celsius):"));
+
+            if (!isNaN(userInput)) {
+                if (userInput < 20) {
+                    alert("It's cold!");
+                } else if (userInput >= 20 && userInput <= 30) {
+                    alert("It's warm.");
+                } else {
+                    alert("It's hot!");
+                }
+            } else {
+                alert("Invalid input. Please enter a valid temperature.");
+            }
+        }
+    </script>
+
+    <button onclick="checkTemperature()">Check Temperature</button>
+</body>
+</html>
